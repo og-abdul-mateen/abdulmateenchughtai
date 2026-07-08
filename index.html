@@ -5,6 +5,24 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Abdul Mateen Chughtai — Engineering Manager &amp; Lead Android Developer</title>
 <meta name="description" content="Abdul Mateen Chughtai — Engineering Manager leading mobile and ad-fraud-prevention engineering. Formerly Lead Android SDK Developer.">
+<link rel="canonical" href="https://abdulmateenchughtai.me/">
+<meta name="theme-color" content="#000000">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon.png">
+<link rel="icon" type="image/png" sizes="512x512" href="/favicon-512.png">
+<link rel="apple-touch-icon" href="/favicon-512.png">
+<!-- Open Graph (link previews on WhatsApp, LinkedIn, Slack, etc.) -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://abdulmateenchughtai.me/">
+<meta property="og:title" content="Abdul Mateen Chughtai — Engineering Manager & Lead Android Developer">
+<meta property="og:description" content="Leading mobile engineering and AI-driven ad fraud prevention. Android, iOS, React Native — 10M+ daily requests.">
+<meta property="og:image" content="https://abdulmateenchughtai.me/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Abdul Mateen Chughtai — Engineering Manager & Lead Android Developer">
+<meta name="twitter:description" content="Leading mobile engineering and AI-driven ad fraud prevention. Android, iOS, React Native — 10M+ daily requests.">
+<meta name="twitter:image" content="https://abdulmateenchughtai.me/og-image.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&family=IBM+Plex+Mono:wght@400;500&family=Newsreader:ital,opsz,wght@0,6..72,200..500;1,6..72,200..500&display=swap" rel="stylesheet">
@@ -226,6 +244,58 @@
     white-space:nowrap;
   }
 
+  /* ---------- SERVICES ---------- */
+  .svc-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:0;
+    border-top:1px solid var(--hairline);
+    border-left:1px solid var(--hairline);
+  }
+  .svc{
+    border-right:1px solid var(--hairline);
+    border-bottom:1px solid var(--hairline);
+    padding:34px 30px 38px;
+  }
+  .svc .num{
+    font-family:'IBM Plex Mono',monospace;
+    font-size:11.5px;
+    letter-spacing:.14em;
+    color:var(--graphite);
+  }
+  .svc h3{
+    font-family:'Archivo',sans-serif;
+    font-variation-settings:'wdth' 106;
+    font-weight:640;
+    font-size:21px;
+    line-height:1.25;
+    margin-top:14px;
+  }
+  .svc p{margin-top:12px;color:var(--smoke);font-size:16.5px}
+  .svc-note{margin-top:30px;color:var(--graphite);font-size:16px;font-style:italic}
+  .svc-note a{color:var(--smoke);border-bottom:1px solid var(--hairline);transition:color .25s ease,border-color .25s ease}
+  .svc-note a:hover{color:var(--paper);border-color:var(--paper)}
+
+  /* ---------- INTERESTS ---------- */
+  .interests{border-top:1px solid var(--hairline)}
+  .interest{
+    display:grid;
+    grid-template-columns:220px 1fr;
+    gap:40px;
+    padding:26px 0;
+    border-bottom:1px solid var(--hairline);
+    align-items:baseline;
+  }
+  .interest b{
+    font-family:'Archivo',sans-serif;
+    font-variation-settings:'wdth' 112;
+    font-weight:720;
+    font-size:20px;
+    letter-spacing:.01em;
+    text-transform:uppercase;
+  }
+  .interest span{color:var(--smoke);font-size:16.5px}
+
   /* ---------- WORKED WITH ---------- */
   .clients{border-top:1px solid var(--hairline)}
   .client{
@@ -307,6 +377,9 @@
     .now-grid,.edu{grid-template-columns:1fr;gap:40px}
     .job{grid-template-columns:1fr;gap:10px;padding:36px 0}
     .client{grid-template-columns:1fr;gap:6px;padding:22px 0}
+    .interest{grid-template-columns:1fr;gap:6px;padding:22px 0}
+    .svc-grid{grid-template-columns:1fr}
+    .svc{padding:28px 22px 32px}
     section{padding:76px 0}
     h1 .row.shift{margin-left:0}
   }
@@ -333,8 +406,9 @@
       I lead the engineering behind systems that catch <em>invalid traffic and ad fraud</em> before it costs web and mobile publishers money — 10&nbsp;million+ requests a day.
     </p>
     <div class="hero-cta rise" style="transition-delay:.26s">
+      <a href="#services">Services</a>
       <a href="#experience">Experience</a>
-      <a href="#contact">Get in touch</a>
+      <a href="https://www.linkedin.com/in/abdulmateenchughtai/" target="_blank" rel="noopener">LinkedIn ↗</a>
     </div>
     </div>
   </div>
@@ -359,6 +433,39 @@
         <div class="stat"><b>10M+</b><span>Mobile production users served</span></div>
       </div>
     </div>
+  </div>
+</section>
+
+<!-- ================= SERVICES ================= -->
+<section id="services">
+  <div class="wrap">
+    <div class="sec-head rise">
+      <h2>Services</h2>
+      <span class="mono">Mobile app development</span>
+    </div>
+    <div class="svc-grid rise">
+      <div class="svc">
+        <span class="num">01</span>
+        <h3>Android App Development</h3>
+        <p>Native apps in Kotlin with Jetpack Compose — from architecture to Play Store release, with CI/CD pipelines and 80%+ test coverage as standard, not an afterthought.</p>
+      </div>
+      <div class="svc">
+        <span class="num">02</span>
+        <h3>Cross-Platform &amp; iOS</h3>
+        <p>React Native and Swift apps when one codebase (or an Apple-first audience) makes more sense. I've shipped crypto wallets, real-estate, and IoT companion apps this way.</p>
+      </div>
+      <div class="svc">
+        <span class="num">03</span>
+        <h3>SDK &amp; Library Engineering</h3>
+        <p>Lightweight, well-documented Android SDKs and internal libraries — analytics, ad serving, device signals — built to be embedded in other people's apps without breaking them.</p>
+      </div>
+      <div class="svc">
+        <span class="num">04</span>
+        <h3>Payments, Ads &amp; Fraud Consulting</h3>
+        <p>Regional payment integrations (M-PESA, Paymob, Stripe), ad monetization setup, and invalid-traffic audits informed by running fraud detection at 10M+ requests a day.</p>
+      </div>
+    </div>
+    <p class="svc-note rise">Have a project in mind? <a href="#contact">Get in touch</a> — I take on select freelance and consulting work.</p>
   </div>
 </section>
 
@@ -424,12 +531,27 @@
   </div>
 </section>
 
+<!-- ================= INTERESTS ================= -->
+<section id="interests">
+  <div class="wrap">
+    <div class="sec-head rise">
+      <h2>Beyond work</h2>
+      <span class="mono">Interests</span>
+    </div>
+    <div class="interests rise">
+      <div class="interest"><b>Photography</b><span>Chasing light and composition — the same eye that shot the portrait on this page</span></div>
+      <div class="interest"><b>Video Editing</b><span>Cutting footage into stories — pacing, sound, and the frames in between</span></div>
+      <div class="interest"><b>Indie App Development</b><span>Building and shipping my own small apps — where every role from idea to release is mine</span></div>
+    </div>
+  </div>
+</section>
+
 <!-- ================= CONTACT ================= -->
 <section id="contact" class="contact">
   <div class="wrap">
     <h2 class="rise">Let's talk</h2>
     <a class="email rise" style="transition-delay:.08s" href="mailto:hello@abdulmateenchughtai.me">hello@abdulmateenchughtai.me</a>
-    <p class="rise" style="transition-delay:.14s">Open to conversations about mobile development, ad fraud prevention, and engineering leadership.</p>
+    <p class="rise" style="transition-delay:.14s">Open to conversations about mobile development, ad fraud prevention, and engineering leadership. You can also find me on <a href="https://www.linkedin.com/in/abdulmateenchughtai/" target="_blank" rel="noopener" style="color:var(--smoke);border-bottom:1px solid var(--hairline)">LinkedIn</a>.</p>
   </div>
 </section>
 
